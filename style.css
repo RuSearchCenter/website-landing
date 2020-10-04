@@ -1,0 +1,29 @@
+/* Colors */
+.red {
+    color: #e31e24;
+}
+
+.redbg {
+    background-color: #e31e24;
+}
+
+.lightgreen {
+    color: #009846;
+}
+
+.lightgreenbg {
+    background-color: #009846;
+}
+
+.lightgreenborder {
+    border: 3px solid #009846;
+}
+
+.green {
+    color: #118f3f;
+}
+
+.greenbg {
+    background-color: #118f3f;
+}
+
