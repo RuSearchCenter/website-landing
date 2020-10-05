@@ -22,7 +22,7 @@ html, body {
     font-weight: 500;
 }
 
-.font-bold {
+.font-bold, b, strong {
     font-weight: 700;
 }
 
@@ -120,9 +120,19 @@ html, body {
     margin-right: 40px;
 }
 
+.padding-x25 {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
 .padding-y15 {
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+.padding-y25 {
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .padding-y30 {
@@ -135,6 +145,11 @@ html, body {
 }
 
 /* specific elements */
+
+#header-logo {
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
 
 #header-logo>img {
     max-width: 650px;
@@ -149,7 +164,39 @@ html, body {
 
 #topmenu>a {
     display: inline-block;
-    padding: 15px;
+    padding: 20px;
+}
+
+#applications {
+    justify-content: space-between;
+    padding-right: 10vw;
+    padding-left: 10vw;
+}
+
+#mission-main {
+    position: relative;
+}
+
+#mission-title {
+    border: 1px solid #000;
+    background: #fff;
+    position: absolute;
+    top: -20px;
+    margin-left: -90px;
+    display: inline-block;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 1.5px;
+}
+
+#mission-text {
+    margin: 45px 10vw;
+    padding: 37px 14vw 27px;
+    border-style: solid none solid none;
+    border-width: 1px;
+    border-color: #000;
+    line-height: 1.5em;
 }
 
 @media screen and (max-width:980px) {
@@ -164,5 +211,27 @@ html, body {
 
     #topmenu>a {
         padding: 10px;
+    }
+
+    #applications {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #applications>a {
+        padding-top: 20px;
+    }
+
+    #applications>span {
+        order: 0;
+    }
+
+    #applications>a {
+        order: 1;
+    }
+
+    #mission-text {
+        margin: 40px 5vw;
+        padding: 35px 7vw;
     }
 }
